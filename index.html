@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Chat Dialog UI</title>
+  </head>
+  <body class="page__body">
+    <div class="page__wrapper">
+      <header class="page__header header">
+        <h1 class="header__title">SPDU</h1>
+      </header>
+      <div class="chat">
+        <div class="chat__message">
+          <img src="images/1.jpg" alt="author photo" class="chat__avatar" />
+          <div class="chat__text">
+            Lorem ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </div>
+        </div>
+        <div class="chat__message chat__message--user">
+          <img src="images/2.jpg" alt="author photo" class="chat__avatar" />
+          <div class="chat__text">
+            Lorem ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </div>
+        </div>
+        <div class="chat__message">
+          <img src="images/1.jpg" alt="author photo" class="chat__avatar" />
+          <div class="chat__text">
+            Lorem ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </div>
+        </div>
+      </div>
+      <form class="form">
+        <div class="form__group">
+          <textarea
+            name=""
+            id="message"
+            cols=""
+            rows="4"
+            class="form__message"
+          ></textarea>
+        </div>
+        <div class="form__group">
+          <input
+            type="submit"
+            value="Send message"
+            id="form__button"
+            class="form__button"
+          />
+        </div>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

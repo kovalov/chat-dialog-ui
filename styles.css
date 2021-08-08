@@ -1,0 +1,109 @@
+:root {
+  --gray--main: rgba(221, 225, 226, 255);
+  --gray--accent: rgba(211, 215, 216, 255);
+  --white: rgba(255, 255, 255, 255);
+  --blue: rgba(37, 137, 204, 255);
+  --blue--accent: rgba(37, 137, 204, 0.8);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page__body {
+  font-family: "Raleway", sans-serif;
+}
+
+.page__wrapper {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.header {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  background: url("https://i.picsum.photos/id/130/320/200.jpg?blur=2&hmac=2nXoGJ7hDzYqyXvwJINdjGFu_cRMyHyL0ZHAawJuk5M");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header__title {
+  color: var(--white);
+  text-shadow: 2px 2px 0px #000000;
+}
+
+.chat {
+  overflow-y: scroll;
+  flex: 3;
+  background-color: var(--gray--main);
+}
+
+.chat__message {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.chat__message--user {
+  background-color: var(--gray--accent);
+  flex-direction: row-reverse;
+}
+
+.chat__avatar {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid var(--white);
+  align-self: center;
+}
+
+.chat__text {
+  flex: 1;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 0.75rem;
+}
+
+.form {
+  background-color: var(--gray--main);
+  flex: 1;
+}
+
+.form__group {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--gray--accent);
+}
+
+.form__message {
+  width: 100%;
+  padding: 0.5rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  border: 1px solid var(--gray--accent);
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px var(--gray--main);
+}
+
+.form__button {
+  background-color: var(--blue);
+  color: var(--white);
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background-color: var(--blue--accent);
+}
