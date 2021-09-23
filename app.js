@@ -27,3 +27,7 @@ function addMessage(message) {
   chat.innerHTML += message;
   chat.scrollTo({ top: chat.scrollHeight, behavior: "smooth" });
 }
+
+const arr = ["a", "b", "c"];
+const result = arr.map((letter) => letter + 1);
+console.log(result);

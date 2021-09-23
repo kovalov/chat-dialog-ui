@@ -19,6 +19,8 @@
 }
 
 .page__wrapper {
+  max-width: 480px;
+  margin: 0 auto;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
