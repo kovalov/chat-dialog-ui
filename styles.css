@@ -24,7 +24,6 @@
   flex-direction: column;
   height: 100vh;
   position: relative;
-  max-width: 480px;
 }
 
 .header {
